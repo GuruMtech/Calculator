@@ -1,0 +1,31 @@
+/* AnimatedText.css */
+
+.calculator-header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .calculator-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4CAF50; /* Accent Color */
+    margin: 0;
+    animation: slideIn 8s ease-in-out infinite;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
